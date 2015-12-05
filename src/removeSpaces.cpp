@@ -15,7 +15,7 @@ NOTES: Don't create new string.
 char removeSpaces(char *s)
 {
 	int i = 0, j = 0;
-	if (strcmp(s, "") == 0)
+	if (s==NULL || strcmp(s, "") == 0)
 		return '\0';
 	for (; s[i] != '\0'; i++)
 	{
